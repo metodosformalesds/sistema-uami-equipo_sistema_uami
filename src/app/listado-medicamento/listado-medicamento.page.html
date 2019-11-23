@@ -1,0 +1,24 @@
+<ion-content>
+    <div class="left">
+      <ion-button color="light" (click)="goToRegistroMedicamento()"> Agregar nuevo medicamento</ion-button>
+    </div>
+      <div class="right">
+      <ion-searchbar color="light" 
+      (ionChange)="onSearchTerm($event)" 
+      placeholder="Buscar nombre"
+      ></ion-searchbar>
+    </div>
+      <div>
+        <ion-item color="light">
+        <ion-label>Nombre</ion-label>
+        <ion-label>Observaciones</ion-label>
+      </ion-item>
+      </div>
+      <ion-list>
+        <ion-item *ngFor="let item of medicamentos" (click)="goToModificarMedicamento(item.Nombre)" color="light">
+          <ion-label>{{item.Nombre}}</ion-label>
+          <ion-label>{{item.Observaciones}}</ion-label>
+          <ion-icon src="../assets/add.svg" class="pointer"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>

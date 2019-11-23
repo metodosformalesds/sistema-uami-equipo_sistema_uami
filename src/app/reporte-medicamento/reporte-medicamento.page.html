@@ -1,0 +1,19 @@
+<ion-content>
+      <div>
+        <ion-item color="light">
+        <ion-label>Nombre</ion-label>
+        <ion-label>Cantidad</ion-label>
+        <ion-label>Observaciones</ion-label>
+      </ion-item>
+      </div>
+      <div>
+      <ion-list>
+        <ion-item *ngFor="let item of medicamentos"color="light">
+          <ion-label>{{item.Nombre}}</ion-label>
+          <ion-label>{{item.Cantidad}}</ion-label>
+          <ion-label>{{item.Observaciones}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+      <ion-button color="tertiary" (click)="goToMenu()" size="large">OK</ion-button>
+    </ion-content>

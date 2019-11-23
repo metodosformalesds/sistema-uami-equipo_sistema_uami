@@ -1,0 +1,42 @@
+<ion-content>
+    <div class="top">
+    <ion-item color="light">
+      <ion-label>Codigo de enfermedad:</ion-label>
+      <ion-input [(ngModel)]="enfermedad" type="text"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Matricula:</ion-label>
+      <ion-input [(ngModel)]="matricula" type="tex"></ion-input>
+    </ion-item>
+    <ion-radio-group [(ngModel)]="recibio"> <h6 class="color">Recibio medicamento?</h6>
+      <ion-row >
+        <ion-col>
+          <ion-item color="light">
+            <ion-icon src="../assets/si.svg" item-start></ion-icon>
+            <ion-label>Si</ion-label>
+            <ion-radio value="true"></ion-radio>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+           <ion-item color="light" shape="round">
+             <ion-icon src="../assets/no.svg" item-start></ion-icon>
+             <ion-label>No</ion-label>
+             <ion-radio value="false"></ion-radio>
+           </ion-item>
+         </ion-col>
+      </ion-row>
+     </ion-radio-group>
+
+  <ion-item color="light">
+    <ion-label>Seleccione un medicamento</ion-label>
+  <ion-select [(ngModel)]="medicamentoSelect" ok-text="Seleccionar" cancel-text="Cancelar">
+    <ion-select-option value=""></ion-select-option>
+    <ion-select-option *ngFor="let med of medicamentos" value="{{med.Nombre}}" >{{med.Nombre}}</ion-select-option>
+  </ion-select>
+</ion-item>
+
+   </div>
+    <ion-button expand="full" shape="round" color="tertiary" (click)="guardar()">Guardar</ion-button>
+  
+  </ion-content>
+  

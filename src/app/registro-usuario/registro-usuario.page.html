@@ -1,0 +1,36 @@
+<ion-content>
+    <div class="top">
+    <ion-item color="light">
+      <ion-label>Nickname:</ion-label>
+      <ion-input disabled="true" [(ngModel)]="nickname" type="text"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Contraseña:</ion-label>
+      <ion-input disabled="true" [(ngModel)]="contrasena" type="tex"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Email: </ion-label>
+      <ion-input [(ngModel)]="email" type="email"></ion-input>
+    </ion-item>
+    <ion-radio-group [(ngModel)]="ROL"> 
+   <ion-row >
+     <ion-col>
+       <ion-item color="light">
+         <ion-icon src="../assets/boss.svg" item-start></ion-icon>
+         <ion-label>Administrador</ion-label>
+         <ion-radio value="ADMINISTRADOR"></ion-radio>
+       </ion-item>
+     </ion-col>
+     <ion-col>
+        <ion-item color="light" shape="round">
+          <ion-icon src="../assets/nurse.svg" item-start></ion-icon>
+          <ion-label>Enfermera</ion-label>
+          <ion-radio value="ENFERMERA"></ion-radio>
+        </ion-item>
+      </ion-col>
+   </ion-row>
+  </ion-radio-group>
+   </div>
+    <ion-button expand="full" shape="round" color="tertiary" (click)="guardar()">Guardar</ion-button>
+  
+  </ion-content>

@@ -1,0 +1,15 @@
+
+
+<ion-content>
+  <div class="left">
+    <ion-button expand="full" (click)="logout()" color="danger" size="medium">Cerrar Sesion</ion-button>
+  </div>
+  <div class="top">
+  <ion-button expand="full" shape="round" (click)="goToListadoMedicamento()" color="light" size="large">Registrar Medicamento</ion-button>
+  <ion-button expand="full" shape="round" (click)="goToListadoPaciente()"    color="light" size="large">Registrar consulta</ion-button>
+  <ion-button *ngIf="ROL1" expand="full" shape="round" (click)="goToReporte()" color="light" size="large">Generar reporte</ion-button>
+  <ion-button expand="full" shape="round" (click)="goToListadoConsulta()"   color="light" size="large">Modificar consulta</ion-button>
+  <ion-button expand="full" shape="round" (click)="goToRegistroPaciente()"   color="light" size="large">Registrar paciente</ion-button>
+  <ion-button *ngIf="ROL1" expand="full" shape="round" (click)="goToRegistroUsuario()" color="light" size="large">Registrar usuario</ion-button>
+</div>
+</ion-content>

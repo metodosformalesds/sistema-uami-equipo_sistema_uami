@@ -1,0 +1,43 @@
+.center{
+    align-items: center;
+}
+.top{
+    margin-top: 7%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.color{
+    color: white;
+}
+.right{
+    margin-right: 60%;
+}
+ion-button{
+    
+    margin-top: 2%;
+    align-content: flex-start;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+ion-img{
+    margin-right: 78%;
+}
+ion-content{
+    --ion-background-color: #013CA6;
+}
+ion-item{
+    .der{
+        margin-left: 2%;
+    }
+    margin-top: 1%;
+    margin-right: 40%;
+    .pointer{
+        cursor: pointer;
+    }
+
+}
+ion-round-group{
+    margin-left: 20%;
+    margin-right: 20%;
+}

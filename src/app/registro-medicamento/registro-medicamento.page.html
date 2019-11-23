@@ -1,0 +1,18 @@
+<ion-content>
+  <div class="top">
+  <ion-item color="light">
+    <ion-label>Nombre:</ion-label>
+    <ion-input [(ngModel)]="nombre" type="text"></ion-input>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label>Cantidad:</ion-label>
+    <ion-input [(ngModel)]="cantidad" type="number"></ion-input>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label>Observaciones: </ion-label>
+    <ion-input [(ngModel)]="observaciones" type="text"></ion-input>
+  </ion-item>
+</div>
+  <ion-button expand="full" shape="round" color="tertiary" (click)="guardarMedicamento()">Guardar</ion-button>
+
+</ion-content>
