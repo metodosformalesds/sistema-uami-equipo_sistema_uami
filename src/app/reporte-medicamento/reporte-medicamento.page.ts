@@ -27,4 +27,6 @@ export class ReporteMedicamentoPage implements OnInit {
   goToMenu(){
     this.navCtrl.navigateForward('menu')
   }
+
+  
 }
