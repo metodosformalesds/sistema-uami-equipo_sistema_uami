@@ -9,7 +9,10 @@ import { NavController } from '@ionic/angular';
 })
 export class ReporteEnfermedadesPage implements OnInit {
   
-  listadoconsultas;CodigoEnfermedad=[]; 
+  listadoconsultas;CodigoEnfermedad=[];a:any; 
+  @ViewChild('barChart',{static:false}) barChart;
+  bars: any;
+  colorArray: any;
   constructor(private navCtrl:NavController,public BD:BDService) { }
 
   ngOnInit() {
@@ -28,11 +31,10 @@ export class ReporteEnfermedadesPage implements OnInit {
         
       });
     })
+    
     console.log(this.CodigoEnfermedad)
   }
-
-  setGraphic(){}
-  
+    
   exportar(){
     this.navCtrl.navigateForward('menu')
   }
