@@ -1,6 +1,6 @@
 # UAMI
 
-USUARIOS DE PRUEBA
+USUARIOS DE PRUEBA\n
  usuario: enfermera@uami.com 
  contraseña: enfermera
 
